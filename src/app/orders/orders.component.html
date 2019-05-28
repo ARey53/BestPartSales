@@ -28,11 +28,11 @@
         </thead>
         <tbody>
           <tr *ngFor="let order of orders; let i = index">
-            <td><input type="text" class="form-control" id="1" placeholder="PID"></td>
-            <td><input type="text" class="form-control" id="2" placeholder="Description"></td>
-            <td><input type="text" class="form-control" id="3" placeholder="Price"></td>
-            <td><input type="text" class="form-control" id="4" placeholder="Inventory"></td>
-            <td><input type="text" class="form-control" id="5" placeholder="Quantity"></td>
+            <td><input [(ngModel)] = "test.PID" type="text" class="form-control" id="1" placeholder="PID"></td>
+            <td><input [(ngModel)] = "test.Description" type="text" class="form-control" id="2" placeholder="Description"></td>
+            <td><input [(ngModel)] = "test.Price" type="text" class="form-control" id="3" placeholder="Price"></td>
+            <td><input [(ngModel)] = "test.Inventory" type="text" class="form-control" id="4" placeholder="Inventory"></td>
+            <td><input [(ngModel)] = "test.Quantity" type="text" class="form-control" id="5" placeholder="Quantity"></td>
             <td><button mat-raised-button color="primary" (click)="removeItem(i)" color="accent"><mat-icon>delete</mat-icon></button></td>
           </tr>
         </tbody>
