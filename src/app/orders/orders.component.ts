@@ -20,9 +20,12 @@ export class OrdersComponent implements OnInit {
 
   }
 
-  async ngOnInit() {
 
-  }
+
+async ngOnInit() {
+
+}
+
 
   // Calculate total and perform input validation
 
